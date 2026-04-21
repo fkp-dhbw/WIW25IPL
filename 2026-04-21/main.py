@@ -1,2 +1,2 @@
-name = input("Wie heißt du?")
+name = input("Wie heißen Sie?")
 print("Hallo", name)
