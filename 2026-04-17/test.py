@@ -1,5 +1,5 @@
 import requests
 
-r = requests.get('https://www.example.com')
+r = requests.get('https://mosbach.dhbw.de')
 print(r.status_code)
 print(r.text)
