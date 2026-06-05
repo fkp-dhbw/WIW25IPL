@@ -18,11 +18,14 @@ class Schneemann:
             self.kugel3.volumen()
         )
 
-schneemann = Schneemann(3, 2, 1)
-print("Volumen des Schneemanns:", schneemann.volumen())
-print(
-    "Radien des Schneemanns:",
-    schneemann.kugel1.radius,
-    schneemann.kugel2.radius,
-    schneemann.kugel3.radius
-)
+kugeln = [Kugel(3), Kugel(2), Kugel(1)]
+gesamt = 0
+for kugel in kugeln:
+    gesamt += kugel.volumen()
+print("Gesamtvolumen der Kugeln:", gesamt)
+
+schneemaenner = {
+    "klein": Schneemann(1, 0.5, 0.25),
+    "gross": Schneemann(3, 2, 1)
+}
+print("Volumen des kleinen Schneemanns:", schneemaenner["klein"].volumen())
